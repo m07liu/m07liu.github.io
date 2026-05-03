@@ -1,2 +1,9 @@
 # Personal-Website
-This provides the code for my personal website, which is hosted by Microsoft Azure at [link].
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>This is the repository for my first, static website I made from scratch, available at 
+    <a href="https://m07liu.github.io/">. </p>
+      <p><em>Go check it out!</em></p>
+  </body>
+</html>
