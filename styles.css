@@ -20,13 +20,18 @@ body {
     font-size: 25px;
 }
 
-a:hover {
+body h2 {
+    text-align: center;
+}
+
+body a:hover {
     color:#ee5c27;
 }
 
 a:link {
     color: rgb(29, 176, 29);
     text-decoration: none;
+    font-weight: bold;
 }
 
 p {
@@ -34,18 +39,20 @@ p {
 }
 
 ul { 
+    justify-content:center;
     width: 100%;
     list-style-type: none;
     margin-top: 0;
     padding: 0;
     overflow: hidden;
     background-color:gold;
-    border-bottom: 5px dashed #ea7d4f;
+    border-bottom: 4px dashed #ea7d4f;
     position: fixed;
     top: 0;
 }
 
 ul li {
+    padding: 5px;
     float:left;
 }
 
@@ -60,6 +67,12 @@ ul li a:hover {
     background-color: #ee5c27;
 }
 
+.divbreak {
+    border: none;
+    border-top: 4px dashed #ea7d4f;
+    width: 100%
+}
+
 .h {
     justify-content:center;
     width:80%;
@@ -67,7 +80,7 @@ ul li a:hover {
     display:flex;
     border: 5px solid #2a1912;
     margin: auto;
-    margin-top: 70px;
+    margin-top: 90px;
     padding: 10px;
 }
 
@@ -100,18 +113,28 @@ ul li a:hover {
 }
 
 .aboutme {
+    width:80%;
     margin:auto;
 }
 
 .aboutme h2 {
     margin: auto;
-    width: 80%;
-    text-align:center;
 }
 
 .aboutme p {
     justify-content:center;
     margin:auto;
-    width:80%;
     text-align:left;
 }
+
+.projects {
+    width: 80%;
+    margin:auto;
+}
+
+.projects h4 {
+    font-weight: bold;
+
+}
+
+
