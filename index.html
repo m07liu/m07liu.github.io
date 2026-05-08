@@ -38,6 +38,11 @@
                 Collegiate.
             </p>
             <br>
+            <p>Currently, I am in my second year of Computer Science at the University
+                of Waterloo, taking courses in object-oriented software development, 
+                logic and computation, computer organization and design, as well as statistics.
+            </p>
+            <br>
             <img src="/images/tennis.jpeg" style="float:right;border:3px solid #320ee8;margin:30px;" width="380" >
             <p>
                 Outside of school, I spent a lot time playing tennis. As a player
@@ -72,10 +77,12 @@
         <hr class="divbreak">
         <div class="projects">
             <h2>Projects</h2>
-            <p>Projects also available on Github and Devpost</p>
-            <h4>Chess Reimagined -- <a href="https://github.com/m07liu/ShatteredCrown">ShatteredCrown</a></h4>
+            <p>Here are some projects that I made with my team on hackathons!</p>
+            <br>
+            <h3>Chess Reimagined -- <a href="https://github.com/m07liu/ShatteredCrown">ShatteredCrown</a></h3>
             <div class="row">
                 <div class="column left">
+                    <h4>Game Basics</h4>
                     <p>Shattered crown is a modified version of chess where each piece has their own 
                         hit points, attack damage, and special ability. Instead of an immediate capture,
                         pieces hit their target and return to their original spot.
@@ -84,24 +91,133 @@
                         the capture. 
                     </p>
                     <p>As mentioned earlier, each piece has their own unique abilities with a certain
-                        cooldown. The King has some one time, game changing abilities that you may pick
+                        cooldown. The King has some one time, game changing abilities that you may choose from
                         at the beginning of the game.
                     </p>
                 </div>
                 <div class="column right">
+                    <br><br>
+                    <video style="margin-bottom:15px;" autoplay loop muted>
+                        <source src="/images/basic.mp4" type="video/mp4">
+                        Your browser does not support this type of video.
+                    </video>
+                    <video width="300px" autoplay loop muted >
+                        <source src="/images/capture.mp4" type="video/mp4">
+                        Your browser does not support this type of video.
+                    </video>
                 </div>
             </div>
             <table>
                 <tr>
-                    <th>Piece</th>
-                    <th>HP</th>
-                    <th>Ability Description</th>
+                    <th style="width:10%;">Piece</th>
+                    <th style="width:10%">HP</th>
+                    <th style="width:10%">Attack</th>
+                    <th style="width:50%">Ability Description</th>
+                    <th style="width:20%">Demo</th>
                 </tr>
                 <tr>
                     <td>♙ Pawn</td>
+                    <td>40</td>
+                    <td>10</td>
+                    <td><em>Strength in Numbers</em>--Adjacent friendly pawns gains +1 HP for each pawn at the end of a turn</td>
+                    <td>
+                        <video height="200px" autoplay loop muted>
+                        <source src="/images/pawn.mp4" type="video/mp4">
+                        Your browser does not support this type of video.
+                    </video>
+                    </td>
+                </tr>
+                <tr>
+                    <td>♖ Rook</td>
+                    <td>50</td>
+                    <td>20</td>
+                    <td><em>Hammer Time</em>--Attacks also hit the enemy behind the target</td>
+                    <td>
+                        <video autoplay loop muted>
+                            <source src="/images/rook.mp4" type="video/mp4">
+                            Your browser does not support this type of video.
+                        </video>
+                    </td>
+                </tr>
+                <tr>
+                    <td>♘ Knight</td>
+                    <td>60</td>
+                    <td>12</td>
+                    <td><em>Hippity Hoppity</em>--Attacks can chain to 3 enemies</td>
+                    <td>
+                        <video autoplay loop muted>
+                            <source src="/images/knight.mp4" type="video/mp4">
+                            Your browser does not support this type of video.
+                        </video>
+                    </td>
+                </tr>
+                <tr>
+                    <td>♗ Bishop</td>
+                    <td>30</td>
+                    <td>20</td>
+                    <td><em>Pope-ing Off</em>--Heal all friendly pieces in a 3x3 area by 7 HP</td>
+                    <td>
+                        <video autoplay loop muted>
+                            <source src="/images/bishop.mp4" type="video/mp4">
+                            Your browser does not support this type of video.
+                        </video>
+                    </td>
+                </tr>
+                <tr>
+                    <td>♕ Queen</td>
+                    <td>100</td>
+                    <td>25</td>
+                    <td><em>Stunning Beauty</em>--Deals extra 10% damage proportional to the targets health and stuns the target</td>
+                    <td>
+                        <video autoplay loop muted>
+                            <source src="/images/queen.mp4" type="video/mp4">
+                            Your browser does not support this type of video.
+                        </video>
+                    </td>
+                </tr>
+                <tr>
+                    <td>♔ King</td>
+                    <td>35</td>
+                    <td>4</td>
+                    <td>You may choose of of the four abilities at the start of the game. 
+                        They can only be used once per game.
+                    </td>
+                    <td> See below.
+                    </td>
                 </tr>
             </table>
-            <h4>AI Gym Instructor -- Gym_Bro</h4>
+            <br>
+            <div class="row">
+                <div class="column left">
+                    <h4>King abilities</h4>
+                    <em>1. Higher Moral</em>--Spawn a rook anywhere and recover 25% of King's health
+                        <br><br>
+                        <em>2. Za Wardou</em>--Opponent loses their next turn
+                        <br><br>
+                        <em>3. Dirty Deeds</em>--Swap the King's position with any friendly piece
+                        <br><br>
+                    <em>4. Epitah</em>--Reverse the opponent's last move
+               </div>
+               <div class="column right">
+                    <video height="200px" autoplay loop muted>
+                        <source src="/images/highermorale.mp4" type="video/mp4">
+                        Your browser does not support this type of video.
+                    </video>
+                    <video height="200px" autoplay loop muted>
+                        <source src="/images/zawardou.mp4" type="video/mp4">
+                        Your browser does not support this type of video.
+                    </video>
+                    <video height="200px" autoplay loop muted>
+                        <source src="/images/dirtydeeds.mp4" type="video/mp4">
+                        Your browser does not support this type of video.
+                    </video>
+                    <video height="200px" autoplay loop muted>
+                        <source src="/images/epitah.mp4" type="video/mp4">
+                        Your browser does not support this type of video.
+                    </video>
+                    </div>
+            </div>
+            <h3>AI Gym Instructor -- Gym_Bro</h3>
         </div>
     </body>
 </html>

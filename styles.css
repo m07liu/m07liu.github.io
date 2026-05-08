@@ -133,17 +133,16 @@ ul li a:hover {
     margin:auto;
 }
 
-.projects h4 {
+.projects h3, h4 {
     font-weight: bold;
 }
 
 .column {
-    padding: 10px;
     float: left;
 }
 
 .left {
-    text-align: left;
+    text-align:left;
     width: 60%;
 }
 
@@ -161,6 +160,12 @@ ul li a:hover {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    padding: 10px;
     border: 2px solid black;
     border-collapse: collapse;
+}
+
+table video {
+    width: 150px;
+    margin-bottom: auto;
 }
