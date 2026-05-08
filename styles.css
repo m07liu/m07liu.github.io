@@ -166,6 +166,6 @@ ul li a:hover {
 }
 
 table video {
-    width: 150px;
+    width: auto;
     margin-bottom: auto;
 }
